@@ -37,14 +37,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                           spreadRadius: 1)
                     ]),
                 child: const CircleAvatar(
-                  radius: 20,
+                  radius: 18,
                   backgroundImage:
                       NetworkImage('https://encurtador.com.br/gopUZ'),
                 ),
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only(left: 15.0),
+              padding: EdgeInsets.only(left: 10.0),
               child: Text(
                 'mind.moda',
                 style: TextStyle(
@@ -97,7 +97,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 '103',
                 style: const TextStyle(
                   fontSize: 12,
-                  fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),
               ),
