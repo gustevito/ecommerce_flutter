@@ -34,27 +34,43 @@ class _MyDrawerState extends State<MyDrawer> {
               title: Text('Últimos Produtos',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
           _widgetContainer(
-            color: Color(0x2B18D174),
-            title: Text('Bolsa de abelhas'),
-            subtitle: Text("R\$38,99"),
+            color: const Color(0x2B18D174),
+            title: const Text('Bolsa de abelhas'),
+            subtitle: const Text("R\$38,99"),
+            backgroundImage: const NetworkImage(
+                'https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
             onTap: () {},
           ),
           _widgetContainer(
-            color: Color(0x2B18D174),
-            title: Text('Camisa Polo G'),
-            subtitle: Text("R\$20,99"),
+            color: const Color(0x2B18D174),
+            title: const Text('Camisa Polo G'),
+            subtitle: const Text("R\$20,99"),
+            backgroundImage: const NetworkImage(
+                'https://www.volvocarsecommerce.com/wp-content/uploads/2021/11/Polo-Preta.jpg'),
             onTap: () {},
           ),
           _widgetContainer(
-            color: Color.fromARGB(45, 196, 196, 196),
-            title: Text('Vestido rosa P'),
-            subtitle: Text("R\$18,90"),
+            color: const Color.fromARGB(45, 196, 196, 196),
+            title: const Text('Vestido rosa P'),
+            subtitle: const Text("R\$18,90"),
+            backgroundImage: const NetworkImage(
+                'https://m.media-amazon.com/images/I/41jw3c8sH3L._AC_.jpg'),
             onTap: () {},
           ),
           _widgetContainer(
-            color: Color(0x2B18D174),
-            title: Text('Camisa Polo Azul'),
-            subtitle: Text("R\$20,99"),
+            color: const Color(0x2B18D174),
+            title: const Text('Camisa Polo Azul'),
+            subtitle: const Text("R\$20,99"),
+            backgroundImage: const NetworkImage(
+                'https://www.jardelatacadao.com.br/lojas/00050181/prod/camisa_polo_50_algodao_50_dry_tradicional_jardel_azul_royal_jardel_atacadao_000041B.jpg'),
+            onTap: () {},
+          ),
+          _widgetContainer(
+            color: const Color(0x2CC4C4C4),
+            title: const Text('Mochila de macaco'),
+            subtitle: const Text("R\$13.483,28"),
+            backgroundImage: const NetworkImage(
+                'https://ae01.alicdn.com/kf/UTB89NxSf4HEXKJk43Jeq6yeeXXaF/Cool-Animal-Print-Mochilas-para-Crian-as-Padr-o-Orangotango-Mochila-Escolar-para-Meninos-Saco-de.jpg_.webp'),
             onTap: () {},
           ),
         ],
@@ -67,6 +83,7 @@ class _MyDrawerState extends State<MyDrawer> {
     required Widget? subtitle,
     required Function onTap,
     required Color? color,
+    required ImageProvider backgroundImage,
   }) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
@@ -82,10 +99,14 @@ class _MyDrawerState extends State<MyDrawer> {
           ),
           child: Row(
             children: [
-              const SizedBox(width: 16.0),
+              Padding(
+                padding: const EdgeInsets.only(left: 12),
+                child:
+                    CircleAvatar(radius: 25, backgroundImage: backgroundImage),
+              ),
               ConstrainedBox(
                 constraints: BoxConstraints(
-                    maxWidth: MediaQuery.of(context).size.width - 180),
+                    maxWidth: MediaQuery.of(context).size.width - 230),
                 child: ListTile(
                   title: title,
                   subtitle: subtitle,

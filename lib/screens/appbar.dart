@@ -10,8 +10,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       height: 200,
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment(0.00, -1.00),
-          end: Alignment(0, 1),
+          begin: const Alignment(0.00, -1.00),
+          end: const Alignment(0, 1),
           colors: [Colors.black, Colors.black.withOpacity(0)],
         ),
       ),
@@ -27,7 +27,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Scaffold.of(context).openDrawer();
               },
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
                     boxShadow: [
@@ -93,9 +93,9 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding:
                 const EdgeInsets.symmetric(vertical: 12.0, horizontal: 6.0),
             child: Container(
-              child: Text(
+              child: const Text(
                 '103',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 12,
                   color: Colors.white,
                 ),
@@ -115,7 +115,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => LoginPage(),
+                      builder: (context) => const LoginPage(),
                     ));
               },
               icon: const Icon(Icons.close,

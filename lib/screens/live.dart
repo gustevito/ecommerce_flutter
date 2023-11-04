@@ -17,7 +17,7 @@ class _LiveStreamState extends State<LiveStream> {
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: NetworkImage(
-              'https://images.pexels.com/photos/7679861/pexels-photo-7679861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+              'https://media.tenor.com/xbzNsk1xsQoAAAAd/nal-do-canal.gif'),
           fit: BoxFit.cover,
         ),
       ),
