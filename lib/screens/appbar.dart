@@ -1,3 +1,4 @@
+import 'package:ecommerce_flutter/screens/checkout.dart';
 import 'package:ecommerce_flutter/screens/login.dart';
 import 'package:flutter/material.dart';
 
@@ -115,10 +116,10 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LoginPage(),
+                      builder: (context) => const CheckoutPage(),
                     ));
               },
-              icon: const Icon(Icons.close,
+              icon: const Icon(Icons.shopping_bag_outlined,
                   shadows: <Shadow>[
                     Shadow(
                         color: Color.fromARGB(119, 0, 0, 0), blurRadius: 30.0)

@@ -28,7 +28,7 @@ class _LiveStreamState extends State<LiveStream> {
         drawer: const MyDrawer(),
         appBar: const MyAppBar(),
         body: Padding(
-          padding: const EdgeInsets.only(top: 430),
+          padding: const EdgeInsets.only(top: 380),
           child: Row(
             children: [
               const Column(
