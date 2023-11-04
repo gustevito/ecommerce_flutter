@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'live.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -26,34 +28,43 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.all(24.0),
               child: Text(
                 'Deco.Lives',
-                style: GoogleFonts.lobster(fontSize: 40),
+                style: GoogleFonts.abrilFatface(fontSize: 40),
               ),
             ),
-            Form(
-              key: _form,
-              child: TextFormField(
-                controller: _username,
-                style: const TextStyle(fontSize: 17),
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Seu usuário',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Form(
+                key: _form,
+                child: TextFormField(
+                  controller: _username,
+                  style: const TextStyle(fontSize: 17),
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Seu usuário',
+                  ),
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'Informe seu usuário para entrar';
+                    }
+                    return null;
+                  },
                 ),
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return 'Informe seu usuário para entrar';
-                  }
-                  return null;
-                },
               ),
             ),
             Container(
               alignment: Alignment.bottomCenter,
-              margin: const EdgeInsets.only(top: 24),
+              margin: const EdgeInsets.fromLTRB(10, 24, 10, 0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   elevation: 0,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LiveStream(),
+                      ));
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
