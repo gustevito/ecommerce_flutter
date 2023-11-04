@@ -25,7 +25,8 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.all(24.0),
               child: Text(
-                'Livegram',
+                'Deco.Lives',
+                style: GoogleFonts.lobster(fontSize: 40),
               ),
             ),
             Form(
@@ -74,5 +75,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-class GoogleFonts {}
