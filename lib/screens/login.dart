@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.all(24.0),
               child: Text(
-                'Deco.Lives',
+                'criativa.app',
                 style: GoogleFonts.abrilFatface(fontSize: 40),
               ),
             ),

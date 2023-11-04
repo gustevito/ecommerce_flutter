@@ -66,14 +66,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 12.0),
             child: Container(
-              child: const Text(
-                'AO VIVO',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white,
-                ),
-              ),
               width: 65,
               alignment: Alignment.center,
               decoration: BoxDecoration(
@@ -87,24 +79,32 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                   ],
                 ),
               ),
+              child: const Text(
+                'AO VIVO',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
           Padding(
             padding:
                 const EdgeInsets.symmetric(vertical: 12.0, horizontal: 6.0),
             child: Container(
+              width: 45,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                color: Colors.black.withOpacity(.5),
+              ),
               child: const Text(
                 '103',
                 style: TextStyle(
                   fontSize: 12,
                   color: Colors.white,
                 ),
-              ),
-              width: 45,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(4),
-                color: Colors.black.withOpacity(.5),
               ),
             ),
           ),
