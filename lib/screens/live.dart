@@ -18,8 +18,7 @@ class _LiveStreamState extends State<LiveStream> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage(
-              'https://media.tenor.com/xbzNsk1xsQoAAAAd/nal-do-canal.gif'),
+          image: AssetImage('assets/vendedora2.gif'),
           fit: BoxFit.cover,
         ),
       ),
@@ -148,12 +147,12 @@ class _LiveStreamState extends State<LiveStream> {
                                     child: CircleAvatar(
                                       radius: 35,
                                       backgroundImage: NetworkImage(
-                                          'https://images.pexels.com/photos/2002717/pexels-photo-2002717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+                                          'https://deco-sites-loja-teste-a.deno.dev/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fbravtexfashionstore.vtexassets.com%2Farquivos%2Fids%2F155840%2FVerdeClaro_Male_Crew_Neck_Worn__body_shape__-_Tag.H03.png%3Fv%3D637685659721100000&fit=cover&width=720&height=720'),
                                     ),
                                   ),
-                                  const Text('Bolsa de abelhas'),
+                                  const Text('Camiseta Olive'),
                                   const Text(
-                                    'R\$38,99',
+                                    'R\$69,30',
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                   ),
