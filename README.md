@@ -1,6 +1,6 @@
 # ecommerce_flutter
 
-A new Flutter project.
+Prototype developed for the 4th Deco Hackathon.
 
 ## Getting Started
 
